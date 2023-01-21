@@ -1,62 +1,30 @@
-import ArraysAndStrings.MyArrayList;
-import ArraysAndStrings.MyStringBuilder;
+import ArraysAndStrings.MyHashTable;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        MyArrayList<Integer> integersList = new MyArrayList<Integer>();
+        MyHashTable<Integer, String> hashTable = new MyHashTable<Integer, String>();
 
-        /* Check init state of the list */
-        System.out.println("isEmpty: " + integersList.isEmpty());
-        System.out.println("getSize: " + integersList.getSize());
-        // System.out.println(list.get(5));
-        // list.removeAt(0);
+        hashTable.put(101, "Raul");
+        hashTable.put(102, "Pau");
+        hashTable.put(102, "Paulina");
+        hashTable.put(103, "Grumpy");
+        hashTable.put(104, "Nova ");
+        hashTable.put(105, "Squanchi");
+        hashTable.put(106, "Huevo");
+        hashTable.put(107, "Piraña");
+        hashTable.put(108, "Remove me");
 
-        /* Add elements */
-        for (int i = 1; i <= 20; i++) {
-            integersList.add(i);
+        for (int i = 110; i < 200; i++) {
+            hashTable.put(i, "Test" + i);
         }
 
-        System.out.println(integersList.toString());
-        System.out.println("getSize: " + integersList.getSize());
+        System.out.println(hashTable.toString());
 
-        /* Remove elements */
-        integersList.removeAt(10);
-        integersList.removeAt(2);
-
-        System.out.println(integersList.toString());
-        System.out.println("getSize: " + integersList.getSize());
-
-        /* Add elements */
-        for (int i = 21; i <= 50; i++) {
-            integersList.add(i);
-        }
-
-        /* Remove elements */
-        integersList.removeAt(0);
-
-        System.out.println(integersList.toString());
-        System.out.println("getSize: " + integersList.getSize());
-
-        MyArrayList<String> stringsList = new MyArrayList<String>();
-
-        /* Check init state of the list */
-        System.out.println("isEmpty: " + stringsList.isEmpty());
-        System.out.println("getSize: " + stringsList.getSize());
-
-        /* Add elements */
-
-        stringsList.add("aaa");
-        stringsList.add("bbb");
-        stringsList.add("ccc");
-        stringsList.add("ddd");
-
-        System.out.println(stringsList.toString());
-        System.out.println("getSize: " + stringsList.getSize());
-
-        /* Remove elements */
-        stringsList.removeAt(2);
-
-        System.out.println(stringsList.toString());
-        System.out.println("getSize: " + stringsList.getSize());
+        System.out.println(hashTable.size());
+        System.out.println(hashTable.get(101));
+        System.out.println(hashTable.get(102));
+        System.out.println(hashTable.get(90));
+        System.out.println(hashTable.remove(108));
+        System.out.println(hashTable.size());
     }
 }
