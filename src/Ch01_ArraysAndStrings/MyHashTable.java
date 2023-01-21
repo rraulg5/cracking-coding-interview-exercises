@@ -1,4 +1,4 @@
-package ArraysAndStrings;
+package Ch01_ArraysAndStrings;
 
 public class MyHashTable<Key, Val> {
     private Pair<Key, Val>[] buckets;

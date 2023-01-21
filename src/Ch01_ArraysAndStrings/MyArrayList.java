@@ -1,4 +1,4 @@
-package ArraysAndStrings;
+package Ch01_ArraysAndStrings;
 
 public class MyArrayList<T> {
     private int size = 0;

@@ -1,4 +1,4 @@
-package ArraysAndStrings;
+package Ch01_ArraysAndStrings;
 
 public class MyStringBuilder {
     private int count = 0;
