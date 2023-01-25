@@ -1,6 +1,6 @@
 package Ch01_ArraysAndStrings.Q03_URLify;
 
-public class QuestionA {
+public class SolutionA {
 
     public static String URLify(String s, int length) {
         String sTrimmed = s.trim();

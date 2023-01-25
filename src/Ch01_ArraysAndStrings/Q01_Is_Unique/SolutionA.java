@@ -2,7 +2,7 @@ package Ch01_ArraysAndStrings.Q01_Is_Unique;
 
 import java.util.Hashtable;
 
-public class QuestionA {
+public class SolutionA {
 
     public static boolean isUnique(String str) {
         Hashtable<Character, Integer> hashTable = new Hashtable<Character, Integer>();

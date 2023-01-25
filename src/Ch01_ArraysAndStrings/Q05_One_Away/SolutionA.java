@@ -3,7 +3,7 @@ package Ch01_ArraysAndStrings.Q05_One_Away;
 import java.util.Hashtable;
 import java.util.Set;
 
-public class QuestionA {
+public class SolutionA {
 
     public static boolean isOneAway(String original, String edited) {
         if (original.length() == edited.length() || original.length() - 1 == edited.length()

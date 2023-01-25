@@ -3,7 +3,7 @@ package Ch01_ArraysAndStrings.Q04_Palindrome_Permutation;
 import java.util.Hashtable;
 import java.util.Set;
 
-public class QuestionA {
+public class SolutionA {
 
     public static boolean isPermutation(String str) {
         str = str.toLowerCase();

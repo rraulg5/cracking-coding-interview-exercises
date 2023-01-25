@@ -2,7 +2,7 @@ package Ch01_ArraysAndStrings.Q02_Check_Permutation;
 
 import java.util.Arrays;
 
-public class QuestionA {
+public class SolutionA {
 
     private static String sort(String s) {
         char[] sArray = s.toCharArray();
