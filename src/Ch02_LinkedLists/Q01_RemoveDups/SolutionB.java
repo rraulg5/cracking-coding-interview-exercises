@@ -2,6 +2,8 @@ package Ch02_LinkedLists.Q01_RemoveDups;
 
 import java.util.HashSet;
 
+import Ch02_LinkedLists.LinkedListNode;
+
 public class SolutionB {
 
     static void deleteDups(LinkedListNode node) {
