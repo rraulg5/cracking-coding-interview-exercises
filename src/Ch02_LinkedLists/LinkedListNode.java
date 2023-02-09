@@ -5,6 +5,9 @@ public class LinkedListNode {
     public int data;
     private int size = 0;
 
+    public LinkedListNode() {
+    }
+
     public LinkedListNode(int d) {
         data = d;
         size++;
